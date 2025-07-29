@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Tours | Glasgow Botanic Gardens Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="text-slate-800">
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator">
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="nav-blur fixed top-0 z-50 w-full">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold gradient-text">Group 21</a>
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="#problem" class="hover:text-emerald-600 transition-colors">Problem</a></li>
+                <li><a href="#process" class="hover:text-emerald-600 transition-colors">Process</a></li>
+                <li><a href="#solution" class="hover:text-emerald-600 transition-colors">Solution</a></li>
+                <li><a href="#evidence" class="hover:text-emerald-600 transition-colors">Our Work</a></li>
+                <li><a href="#reflections" class="hover:text-emerald-600 transition-colors">Reflections</a></li>
+                <li><a href="#story" class="hover:text-emerald-600 transition-colors">Our Story</a></li>
+            </ul>
+            <a href="#contact"
+                class="hidden md:block bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 rounded-full hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 text-sm">
+                Contact
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white min-h-screen flex items-center relative overflow-hidden">
+            <div class="floating-leaf" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+            <div class="floating-leaf" style="top: 60%; left: 80%; animation-delay: 2s;"></div>
+            <div class="floating-leaf" style="top: 40%; left: 20%; animation-delay: 4s;"></div>
+
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    Gardens for<br><span class="text-amber-300">Everyone</span>
+                </h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-12 text-emerald-50">
+                    A design project on making Glasgow Botanic Gardens accessible for blind and deaf visitors.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#solution"
+                        class="bg-white text-emerald-700 px-6 py-3 rounded-full font-medium hover:bg-emerald-50 transition-all transform hover:scale-105">
+                        See Our Proposed Solution
+                    </a>
+                    <a href="#evidence"
+                        class="glass-effect px-6 py-3 rounded-full font-medium hover:bg-white/20 transition-all">
+                        View Our Work
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem Section -->
+        <section id="problem" class="py-24 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">The Problem Statement</h2>
+                    <p class="text-lg text-slate-600 mb-12">
+                        The volunteer guides at Glasgow Botanic Gardens want to enhance their tours to be more
+                        meaningful and enjoyable for deaf and/or blind visitors. The core challenge is to understand the
+                        unique accessibility needs of these groups and adapt existing tour materials to better serve
+                        them, ensuring an inclusive experience for all.
+                    </p>
+
+                    <div class="bg-gradient-to-br from-emerald-50 to-amber-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 text-emerald-800">Our User-Centric Framing</h3>
+                        <p class="text-xl text-slate-700 font-medium">
+                            How might we help volunteer guides at the Glasgow Botanic Gardens offer meaningful and
+                            accessible tour experiences for blind and/or deaf visitors within the constraints of a
+                            public, low-cost environment?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="py-24 bg-gradient-to-br from-slate-50 to-emerald-50 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Our Design Process</h2>
+                    <p class="text-xl text-slate-600">We adopted the Double Diamond model to guide our design journey.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="solution-card p-6 text-center">
+                        <div
+                            class="bg-gradient-to-br from-red-500 to-pink-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
+                            1</div>
+                        <h3 class="text-xl font-bold mb-3">Discover</h3>
+                        <p class="text-slate-600">We conducted an informal, face-to-face interview with our partner and
+                            researched existing solutions in other public attractions.</p>
+                    </div>
+
+                    <div class="solution-card p-6 text-center">
+                        <div
+                            class="bg-gradient-to-br from-orange-500 to-red-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
+                            2</div>
+                        <h3 class="text-xl font-bold mb-3">Define</h3>
+                        <p class="text-slate-600">We synthesized our research into key insights and formulated our "How
+                            Might We" statement to focus our efforts.</p>
+                    </div>
+
+                    <div class="solution-card p-6 text-center">
+                        <div
+                            class="bg-gradient-to-br from-emerald-500 to-teal-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
+                            3</div>
+                        <h3 class="text-xl font-bold mb-3">Develop</h3>
+                        <p class="text-slate-600">We brainstormed diverse ideas and created low-fidelity prototypes
+                            (sketches) to explore potential solutions.</p>
+                    </div>
+
+                    <div class="solution-card p-6 text-center">
+                        <div
+                            class="bg-gradient-to-br from-blue-500 to-purple-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
+                            4</div>
+                        <h3 class="text-xl font-bold mb-3">Deliver</h3>
+                        <p class="text-slate-600">This final stage involves refining our proposed solution based on
+                            feedback and developing a clear implementation plan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section id="solution" class="py-24 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Our Proposed Solution</h2>
+                    <p class="text-xl text-slate-600">A low-cost, multi-faceted approach to enhance the tour experience.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="solution-card group">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">For Deaf Visitors</h3>
+                            <p class="text-slate-600">Placing QR codes at key points of interest that link to a webpage
+                                with visual descriptions and British Sign Language (BSL) video interpretations.</p>
+                        </div>
+                    </div>
+
+                    <div class="solution-card group">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">For Blind Visitors</h3>
+                            <p class="text-slate-600">Developing a descriptive audio guide, accessible via their own
+                                devices, that includes rich descriptions, ambient sounds, and music to create a sensory
+                                experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="max-w-3xl mx-auto bg-gradient-to-br from-slate-50 to-emerald-50 p-8 rounded-2xl text-center">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">Justification</h3>
+                    <p class="text-lg text-slate-700">
+                        This solution is suitable because it directly addresses the project's constraints. It is
+                        <strong>low-cost</strong>, as it leverages visitors' own smartphones and avoids expensive
+                        hardware. It is <strong>sustainable</strong> for volunteers, as the digital content can be
+                        easily managed and updated. Most importantly, it is <strong>inclusive</strong> by providing
+                        distinct, tailored experiences rather than a one-size-fits-all approach.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Work Section -->
+        <section id="evidence" class="py-24 bg-gradient-to-br from-emerald-50 to-slate-50 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Our Work & Evidence</h2>
+                    <p class="text-xl text-slate-600">A portfolio of our design journey and communications.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="solution-card p-8">
+                        <div class="text-4xl mb-4">🎬</div>
+                        <h3 class="text-2xl font-bold mb-4">Week 1 Pitch Video</h3>
+                        <p class="text-slate-600 mb-4">Our initial video presenting our understanding of the problem and
+                            early process.</p>
+                        <a href="#" class="font-bold text-emerald-600 hover:underline">View Video (Link Placeholder)
+                            &rarr;</a>
+                    </div>
+                    <div class="solution-card p-8">
+                        <div class="text-4xl mb-4">📊</div>
+                        <h3 class="text-2xl font-bold mb-4">Week 1 Presentation</h3>
+                        <p class="text-slate-600 mb-4">The slides detailing our initial research, stakeholder
+                            engagement, and process.</p>
+                        <a href="#" class="font-bold text-emerald-600 hover:underline">View Slides (Link Placeholder)
+                            &rarr;</a>
+                    </div>
+                    <div class="solution-card p-8">
+                        <div class="text-4xl mb-4">💬</div>
+                        <h3 class="text-2xl font-bold mb-4">Partner Communications</h3>
+                        <p class="text-slate-600 mb-4">Documentation of our interview notes and ongoing communication
+                            with our partner.</p>
+                        <a href="#" class="font-bold text-emerald-600 hover:underline">View Comms (Link Placeholder)
+                            &rarr;</a>
+                    </div>
+                    <div class="solution-card p-8 bg-slate-50">
+                        <div class="text-4xl mb-4">🎬</div>
+                        <h3 class="text-2xl font-bold mb-4">Week 2 Pitch Video</h3>
+                        <p class="text-slate-600 mb-4">Our second video iterating on our prototypes and sharing new
+                            findings.</p>
+                        <a href="#" class="font-bold text-emerald-600 hover:underline">View Video (Link Placeholder)
+                            &rarr;</a>
+                    </div>
+                    <div class="solution-card p-8 bg-slate-50">
+                        <div class="text-4xl mb-4">📝</div>
+                        <h3 class="text-2xl font-bold mb-4">Week 2 Prototypes</h3>
+                        <p class="text-slate-600 mb-4">Our refined, learning-focused prototypes based on Week 1
+                            feedback.</p>
+                        <a href="#" class="font-bold text-emerald-600 hover:underline">View Prototypes (Link
+                            Placeholder) &rarr;</a>
+                    </div>
+                    <div class="solution-card p-8 bg-slate-50">
+                        <div class="text-4xl mb-4">📋</div>
+                        <h3 class="text-2xl font-bold mb-4">Additional Research</h3>
+                        <p class="text-slate-600 mb-4">Further data collection including surveys or additional
+                            interviews with the public.</p>
+                        <a href="#" class="font-bold text-emerald-600 hover:underline">View Research (Link Placeholder)
+                            &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflections Section -->
+        <section id="reflections" class="py-24 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Reflections on Our Journey</h2>
+                    <p class="text-xl text-slate-600">Key learnings that have shaped our project.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    <div class="solution-card p-8">
+                        <div class="text-4xl mb-4">🤝</div>
+                        <h3 class="text-2xl font-bold mb-4">On Partner Interactions</h3>
+                        <p class="text-slate-600">Our initial interview was a crucial learning moment. By using
+                            open-ended questions as taught in lectures ('The Mom Test' principles), we avoided leading
+                            the witness and gained genuine insights into the constraints and priorities of the volunteer
+                            guides. This taught us that understanding the needs of the *facilitators* is just as
+                            important as understanding the end-users.</p>
+                    </div>
+
+                    <div class="solution-card p-8">
+                        <div class="text-4xl mb-4">🔧</div>
+                        <h3 class="text-2xl font-bold mb-4">On Prototyping</h3>
+                        <p class="text-slate-600">The feedback on our first pitch highlighted that our initial
+                            prototypes were more for demonstration than for learning. This was a key reflection. Our
+                            actionable insight is to now use low-fidelity prototyping as a tool to ask questions and
+                            test specific assumptions quickly, rather than just presenting a finished concept. We will
+                            explore more variations in Week 2 to fully leverage this method.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Essay Section -->
+        <section id="story" class="py-24 bg-gradient-to-br from-slate-50 to-emerald-50 section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center gradient-text">Our Story: What We're
+                        Proud Of</h2>
+                    <div class="text-lg text-slate-700 space-y-4">
+                        <p>Reflecting on our work so far, we are most proud of our commitment to understanding the
+                            problem before jumping to solutions. It would have been simpler to propose a single piece of
+                            technology, but our initial research and partner interview quickly revealed the complexity
+                            of the challenge: designing for two distinct communities—deaf and blind visitors—with vastly
+                            different needs, all while respecting the constraints of a volunteer-run organization.</p>
+                        <p>Embracing this complexity has been our biggest challenge, but also our greatest source of
+                            learning. It has forced us to think critically about what "accessibility" truly means. It's
+                            not a one-size-fits-all feature, but a nuanced approach that considers multiple
+                            perspectives. The process of defining our "How Might We" statement was a pivotal moment,
+                            focusing our efforts on a human-centered goal.</p>
+                        <p>While our final solution is still developing, we are proud of the methodical foundation we
+                            have built. The journey ahead involves translating these early insights into actionable
+                            designs, and we are confident that by continuing to listen, iterate, and reflect, we can
+                            create an outcome that is genuinely helpful. <br><em>(This reflection will be expanded upon
+                                project completion).</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="py-24 bg-white section-fade-in">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Meet Group 21</h2>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 max-w-5xl mx-auto">
+                    <div class="team-member">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl font-bold">
+                            M</div>
+                        <h4 class="font-bold text-slate-800">Matthias Lim</h4>
+                    </div>
+                    <div class="team-member">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl font-bold">
+                            C</div>
+                        <h4 class="font-bold text-slate-800">Chee Jian Chuah</h4>
+                    </div>
+                    <div class="team-member">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl font-bold">
+                            J</div>
+                        <h4 class="font-bold text-slate-800">Joel Koh</h4>
+                    </div>
+                    <div class="team-member">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl font-bold">
+                            W</div>
+                        <h4 class="font-bold text-slate-800">Wan Ying Huang</h4>
+                    </div>
+                    <div class="team-member">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-rose-400 to-red-500 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl font-bold">
+                            Y</div>
+                        <h4 class="font-bold text-slate-800">Yong Lin Chua</h4>
+                    </div>
+                    <div class="team-member">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full mx-auto mb-3 flex items-center justify-center text-white text-2xl font-bold">
+                            S</div>
+                        <h4 class="font-bold text-slate-800">Shanice Yeong</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24 bg-gradient-to-br from-emerald-700 to-slate-800 text-white section-fade-in">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold mb-8">Get In Touch</h2>
+                <p class="text-xl max-w-2xl mx-auto mb-12 text-emerald-100">
+                    For more information about this project, please contact our stakeholder partner.
+                </p>
+
+                <div class="glass-effect max-w-lg mx-auto p-8 rounded-2xl">
+                    <div class="text-4xl mb-4">🌿</div>
+                    <h3 class="font-bold text-2xl mb-2">Chrissy Sanachan</h3>
+                    <p class="text-emerald-100 mb-4">Friends of Glasgow Botanic Gardens</p>
+                    <a href="mailto:chrissy@glasgowbotanicgardens.com"
+                        class="inline-flex items-center text-white hover:text-emerald-200 transition-colors font-medium bg-white/10 px-4 py-2 rounded-full hover:bg-white/20">
+                        📧 Contact
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">© 2025 Group 21 • A Project for the University of Glasgow</p>
+            <div class="flex justify-center space-x-6 text-sm">
+                <a href="https://glasgowbotanicgardens.com/" target="_blank"
+                    class="hover:text-emerald-400 transition-colors">Gardens</a>
+                <a href="https://www.rnib.org.uk/" target="_blank"
+                    class="hover:text-emerald-400 transition-colors">RNIB</a>
+                <a href="https://bda.org.uk/" target="_blank" class="hover:text-emerald-400 transition-colors">BDA</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fade-in animation
+        const sections = document.querySelectorAll('.section-fade-in');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Scroll progress
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.body.offsetHeight - window.innerHeight;
+            const scrollPercent = scrollTop / docHeight;
+            document.getElementById('scrollProgress').style.width = (scrollPercent * 100) + '%';
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
