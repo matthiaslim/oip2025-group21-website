@@ -15,7 +15,7 @@
         }
 
         .hero-bg {
-            background: linear-gradient(rgba(13, 56, 34, 0.8), rgba(13, 56, 34, 0.6)), url('https://placehold.co/1600x900/2E4035/FFFFFF?text=Glasgow+Botanic+Gardens');
+            background: linear-gradient(rgba(13, 56, 34, 0.8), rgba(13, 56, 34, 0.6)), url('https://images.unsplash.com/photo-1720258560503-3c0fb53a7bd2?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             background-size: cover;
             background-position: center;
         }
@@ -108,4 +108,127 @@
             50% { transform: translateY(-30px) rotate(180deg); }
             90% { opacity: 1; }
             100% { transform: translateY(30px) rotate(360deg); opacity: 0; }
+        }
+
+        /* Modal styles */
+        #videoModal {
+            backdrop-filter: blur(5px);
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        #videoModal .bg-white {
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-50px) scale(0.95);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Smooth transitions for modal buttons */
+        #videoModal button {
+            transition: all 0.2s ease;
+        }
+
+        #videoModal button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Prototype showcase styles */
+        .prototype-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .prototype-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .prototype-card .bg-white {
+            transition: box-shadow 0.3s ease;
+        }
+
+        .prototype-card:hover .bg-white {
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 10px 10px -5px rgb(0 0 0 / 0.04);
+        }
+
+        /* Timeline styles for larger screens */
+        @media (min-width: 768px) {
+            .prototype-card {
+                max-width: 400px;
+            }
+        }
+
+        /* Responsive timeline adjustments */
+        @media (max-width: 767px) {
+            .prototype-card {
+                max-width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        /* Video player styles */
+        video {
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        video:focus {
+            outline: 2px solid #10b981;
+            outline-offset: 2px;
+        }
+
+        /* YouTube iframe styles */
+        iframe {
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+
+        iframe:focus {
+            outline: 2px solid #10b981;
+            outline-offset: 2px;
+        }
+
+        /* Responsive video container for YouTube */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Enhanced modal styles for video content */
+        #videoModal .bg-white {
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        /* Responsive video container */
+        @media (max-width: 768px) {
+            #videoModal .bg-white {
+                margin: 1rem;
+                max-height: 95vh;
+            }
+            
+            video {
+                max-height: 250px !important;
+            }
         }
