@@ -63,6 +63,46 @@
             text-align: center;
         }
 
+        /* Enhanced team member cards */
+        .team-member-card {
+            position: relative;
+        }
+
+        .team-member-card .bg-white {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.95);
+        }
+
+        .team-member-card:hover .bg-white {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        /* Staggered animation for team cards */
+        .team-member-card:nth-child(1) { animation-delay: 0.1s; }
+        .team-member-card:nth-child(2) { animation-delay: 0.2s; }
+        .team-member-card:nth-child(3) { animation-delay: 0.3s; }
+        .team-member-card:nth-child(4) { animation-delay: 0.4s; }
+        .team-member-card:nth-child(5) { animation-delay: 0.5s; }
+        .team-member-card:nth-child(6) { animation-delay: 0.6s; }
+
+        /* Team stats hover effects */
+        .text-center:hover .w-16 {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Gradient line animation */
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .bg-gradient-to-r.from-emerald-500.to-teal-500 {
+            background: linear-gradient(270deg, #10b981, #14b8a6, #10b981);
+            background-size: 200% 200%;
+            animation: gradientShift 3s ease infinite;
+        }
+
         /* Fade-in animation */
         .section-fade-in {
             opacity: 0;
