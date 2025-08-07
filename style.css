@@ -1,4 +1,4 @@
-    /* Using a more professional and readable font combination */
+/* Using a more professional and readable font combination */
         body {
             font-family: 'Space Grotesk', sans-serif;
             background-color: #f8fafc; /* Slightly off-white for a softer look */
@@ -271,4 +271,27 @@
             video {
                 max-height: 250px !important;
             }
+        }
+
+        /* Custom Footer Styling */
+        .footer-bg {
+          background: linear-gradient(90deg, #e3f9e5 0%, #d0e6f6 100%);
+          color: #234c2e;
+          box-shadow: 0 -2px 24px 0 rgba(34,76,46,0.08);
+        }
+
+        .footer-bg h3 {
+          color: #234c2e;
+        }
+
+        .footer-bg a {
+          color: #234c2e;
+        }
+
+        .footer-bg a:hover {
+          color: #047857;
+        }
+
+        .footer-bg .text-xs {
+          color: #4b6b50;
         }
