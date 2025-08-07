@@ -13,6 +13,11 @@
 </head>
 
 <body class="text-slate-800">
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-md z-50">Skip
+        to main content</a>
+
     <!-- Scroll Progress Indicator -->
     <div class="scroll-indicator">
         <div class="scroll-progress" id="scrollProgress"></div>
@@ -23,23 +28,18 @@
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
             <ul class="hidden md:flex space-x-6 items-center">
                 <li><a href="#problem" class="hover:text-emerald-600 transition-colors">Problem</a></li>
-                <li><a href="#team" class="hover:text-emerald-600 transition-colors">Team</a></li>
-                <li><a href="#process" class="hover:text-emerald-600 transition-colors">Process</a></li>
-                <li><a href="#evidence" class="hover:text-emerald-600 transition-colors">Our Work</a></li>
+                <li><a href="#process" class="hover:text-emerald-600 transition-colors">Process & Team</a></li>
                 <li><a href="#solution" class="hover:text-emerald-600 transition-colors">Solution</a></li>
+                <li><a href="#evidence" class="hover:text-emerald-600 transition-colors">Our Work</a></li>
                 <li><a href="#reflections" class="hover:text-emerald-600 transition-colors">Reflections</a></li>
                 <li><a href="interviews.html" class="hover:text-emerald-600 transition-colors">Interviews</a></li>
                 <li><a href="references.html" class="hover:text-emerald-600 transition-colors">References</a></li>
             </ul>
-            <a href="#contact"
-                class="hidden md:block bg-gradient-to-r from-emerald-600 to-emerald-700 text-white px-4 py-2 rounded-full hover:from-emerald-700 hover:to-emerald-800 transition-all duration-300 text-sm">
-                Contact
-            </a>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="hero-bg text-white min-h-screen flex items-center relative overflow-hidden">
             <div class="floating-leaf" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
@@ -71,164 +71,290 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">The Problem Statement</h2>
-                    <p class="text-lg text-slate-600 mb-12">
-                        The volunteer guides at Glasgow Botanic Gardens want to enhance their tours to be more
-                        meaningful and enjoyable for deaf and/or blind visitors. The core challenge is to understand the
-                        unique accessibility needs of these groups and adapt existing tour materials to better serve
-                        them, ensuring an inclusive experience for all.
+
+                    <p class="text-lg text-slate-600 mb-8">
+                        <strong>The Challenge:</strong> Volunteer guides at Glasgow Botanic Gardens want to enhance
+                        their tours to be more meaningful and enjoyable for deaf and/or blind visitors. However,
+                        existing tour formats rely heavily on visual and auditory elements, creating significant
+                        barriers for visitors with sensory impairments.
                     </p>
 
-                    <div class="bg-gradient-to-br from-emerald-50 to-amber-50 p-8 rounded-2xl">
+                    <div class="bg-gradient-to-br from-slate-50 to-slate-100 p-8 rounded-2xl mb-8">
+                        <h3 class="text-xl font-bold mb-4 text-slate-800">Key Barriers Identified:</h3>
+                        <div class="grid md:grid-cols-2 gap-4 text-left">
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-red-500 rounded-full mr-3 mt-3"></div>
+                                <div>
+                                    <strong>For Blind Visitors:</strong> Lack of tactile elements, audio descriptions,
+                                    and spatial orientation support
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-3"></div>
+                                <div>
+                                    <strong>For Deaf Visitors:</strong> No sign language interpretation, visual
+                                    information gaps, limited text-based content
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-amber-500 rounded-full mr-3 mt-3"></div>
+                                <div>
+                                    <strong>Guide Challenges:</strong> Limited training in accessibility practices and
+                                    lack of inclusive tour materials
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-2 h-2 bg-green-500 rounded-full mr-3 mt-3"></div>
+                                <div>
+                                    <strong>Resource Constraints:</strong> Public venue with limited budget for
+                                    accessibility improvements
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-8 rounded-2xl">
                         <h3 class="text-2xl font-bold mb-4 text-emerald-800">How might we...</h3>
-                        <p class="text-xl text-slate-700 font-medium">
-                            Help volunteer guides at the Glasgow Botanic Gardens offer meaningful and
-                            accessible tour experiences for blind and/or deaf visitors within the constraints of a
-                            public, low-cost environment?
+                        <p class="text-xl text-slate-700 font-medium mb-4">
+                            Design an accessible, cost-effective digital solution that empowers volunteer guides to
+                            deliver meaningful, inclusive botanical garden experiences for blind and deaf visitors,
+                            while enhancing rather than replacing human interaction?
                         </p>
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
         </section>
 
-        <!-- Team Section -->
-        <section id="team" class="py-24 bg-gradient-to-br from-slate-50 to-emerald-50 section-fade-in">
+        <!-- Process & Team Section -->
+        <section id="process" class="py-24 bg-gradient-to-br from-slate-50 to-emerald-50 section-fade-in">
             <div class="container mx-auto px-6">
+                <!-- Process Introduction -->
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Meet Group 21</h2>
-                    <p class="text-xl text-slate-600 mb-8">The diverse team behind this accessibility project.</p>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Our Design Process & Team</h2>
+                    <p class="text-xl text-slate-600 mb-8">We adopted the Double Diamond model to guide our design
+                        journey, working as a collaborative team to tackle accessibility challenges.</p>
                     <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto rounded-full"></div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    <div class="team-member-card group">
-                        <div
-                            class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
-                            <div class="relative mb-6">
-                                <div
-                                    class="w-24 h-24 bg-gradient-to-br rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                    <img src="images/matthias.jpg" alt="M"
-                                        class="rounded-full w-full h-full object-cover">
-                                </div>
-                            </div>
-                            <h4 class="text-xl font-bold text-slate-800 text-center">Matthias Lim</h4>
-                        </div>
-                    </div>
+                <!-- Team Introduction -->
+                <div class="max-w-4xl mx-auto text-center mb-16">
+                    <h3 class="text-3xl font-bold mb-6 text-slate-800">The Team Behind the Project</h3>
+                    <p class="text-lg text-slate-600 mb-8">Six diverse perspectives came together to create an inclusive
+                        solution for Glasgow Botanic Gardens accessibility.</p>
 
-                    <div class="team-member-card group">
-                        <div
-                            class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
-                            <div class="relative mb-6">
-                                <div
-                                    class="w-24 h-24 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                    <img src="images/gordon-chuah.jpg" alt="C"
-                                        class="rounded-full w-full h-full object-cover">
-                                </div>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden shadow-lg">
+                                <img src="images/matthias.jpg" alt="Matthias Lim" class="w-full h-full object-cover">
                             </div>
-                            <h4 class="text-xl font-bold text-slate-800 text-center">Chee Jian Chuah</h4>
+                            <h4 class="text-sm font-semibold text-slate-800">Matthias Lim</h4>
                         </div>
-                    </div>
-
-                    <div class="team-member-card group">
-                        <div
-                            class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
-                            <div class="relative mb-6">
-                                <div
-                                    class="w-24 h-24 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                    <img src="images/joel.jpg" alt="J" class="rounded-full w-full h-full object-cover">
-                                </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden shadow-lg">
+                                <img src="images/gordon-chuah.jpg" alt="Chuah Chee Jian"
+                                    class="w-full h-full object-cover">
                             </div>
-                            <h4 class="text-xl font-bold text-slate-800 text-center">Joel Koh</h4>
+                            <h4 class="text-sm font-semibold text-slate-800">Chuah Chee Jian</h4>
                         </div>
-                    </div>
-
-                    <div class="team-member-card group">
-                        <div
-                            class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
-                            <div class="relative mb-6">
-                                <div
-                                    class="w-24 h-24 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                    W</div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden shadow-lg">
+                                <img src="images/joel.jpg" alt="Joel Koh" class="w-full h-full object-cover">
                             </div>
-                            <h4 class="text-xl font-bold text-slate-800 text-center">Wan Ying Huang</h4>
+                            <h4 class="text-sm font-semibold text-slate-800">Joel Koh</h4>
                         </div>
-                    </div>
-
-                    <div class="team-member-card group">
-                        <div
-                            class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
-                            <div class="relative mb-6">
-                                <div
-                                    class="w-24 h-24 bg-gradient-to-br rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                    <img src="images/yonglin.jpg" alt="Y"
-                                        class="rounded-full w-full h-full object-cover">
-                                </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden shadow-lg">
+                                <img src="images/wanying.jpg" alt="Huang Wan Ying" class="w-full h-full object-cover">
                             </div>
-                            <h4 class="text-xl font-bold text-slate-800 text-center">Yong Lin Chua</h4>
+                            <h4 class="text-sm font-semibold text-slate-800">Huang Wan Ying</h4>
                         </div>
-                    </div>
-
-                    <div class="team-member-card group">
-                        <div
-                            class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-100">
-                            <div class="relative mb-6">
-                                <div
-                                    class="w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full mx-auto flex items-center justify-center text-white text-3xl font-bold shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                    S</div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden shadow-lg">
+                                <img src="images/yonglin.jpg" alt="Chua Yong Lin" class="w-full h-full object-cover">
                             </div>
-                            <h4 class="text-xl font-bold text-slate-800 text-center">Shanice Yeong</h4>
+                            <h4 class="text-sm font-semibold text-slate-800">Chua Yong Lin</h4>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-20 h-20 rounded-full mx-auto mb-3 overflow-hidden shadow-lg">
+                                <img src="images/shanice.jpg" alt="Shanice Yeong" class="w-full h-full object-cover">
+                            </div>
+                            <h4 class="text-sm font-semibold text-slate-800">Shanice Yeong</h4>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <!-- Design Process -->
+                <div class="mb-16">
+                    <h3 class="text-3xl font-bold text-center mb-8 text-slate-800">Double Diamond Design Process</h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                        <div class="solution-card p-6 text-center">
+                            <div
+                                class="bg-gradient-to-br from-red-500 to-pink-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
+                                1</div>
+                            <h3 class="text-xl font-bold mb-3">Discover</h3>
+                            <p class="text-slate-600 mb-4">We conducted an informal, face-to-face interview with our
+                                partner
+                                and
+                                researched existing solutions in other public attractions.</p>
+                            <div class="text-sm text-slate-500">
+                                <strong>Methods:</strong> Stakeholder interviews, preexisting solutions analysis
+                            </div>
+                        </div>
+
+                        <div class="solution-card p-6 text-center">
+                            <div
+                                class="bg-gradient-to-br from-orange-500 to-red-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
+                                2</div>
+                            <h3 class="text-xl font-bold mb-3">Define</h3>
+                            <p class="text-slate-600 mb-4">We synthesised our research into key insights and formulated
+                                our
+                                "How
+                                Might We" statement to focus our efforts.</p>
+                            <div class="text-sm text-slate-500">
+                                <strong>Methods:</strong> Insight synthesis, problem reframing, constraint mapping
+                            </div>
+                        </div>
+
+                        <div class="solution-card p-6 text-center">
+                            <div
+                                class="bg-gradient-to-br from-emerald-500 to-teal-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
+                                3</div>
+                            <h3 class="text-xl font-bold mb-3">Develop</h3>
+                            <p class="text-slate-600 mb-4">We brainstormed diverse ideas and created low-fidelity
+                                prototypes
+                                (sketches) to explore potential solutions.</p>
+                            <div class="text-sm text-slate-500">
+                                <strong>Methods:</strong> Lo-fi prototyping, concept validation
+                            </div>
+                        </div>
+
+                        <div class="solution-card p-6 text-center">
+                            <div
+                                class="bg-gradient-to-br from-blue-500 to-purple-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
+                                4</div>
+                            <h3 class="text-xl font-bold mb-3">Deliver</h3>
+                            <p class="text-slate-600 mb-4">This final stage involves refining our proposed solution
+                                based on
+                                feedback and developing a clear implementation plan.</p>
+                            <div class="text-sm text-slate-500">
+                                <strong>Methods:</strong> Hi-fi prototyping
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Process Insights -->
+                    <div class="mt-16 max-w-4xl mx-auto">
+                        <h3 class="text-2xl font-bold text-center mb-8 gradient-text">Process Deep Dive</h3>
+
+                        <div class="space-y-8">
+                            <div
+                                class="bg-gradient-to-r from-red-50 to-pink-50 p-6 rounded-xl border-l-4 border-red-400">
+                                <h4 class="text-lg font-bold text-red-800 mb-3">Discovery Challenges & Breakthroughs
+                                </h4>
+                                <p class="text-red-700 mb-3">
+                                    Initial assumption: "We need to design one accessible tour." Reality from
+                                    stakeholder
+                                    interviews: Different disabilities require fundamentally different approaches.
+                                </p>
+                                <p class="text-red-700">
+                                    <strong>Breakthrough moment:</strong> When volunteers explained how deaf and blind
+                                    visitors need opposite information (visual detail vs. spatial audio), we realized
+                                    one-size-fits-all was impossible.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-orange-50 to-amber-50 p-6 rounded-xl border-l-4 border-orange-400">
+                                <h4 class="text-lg font-bold text-orange-800 mb-3">Define Phase Iterations</h4>
+                                <p class="text-orange-700 mb-3">
+                                    Our "How Might We" statement evolved three times: from "create accessible tours" to
+                                    "enhance existing tours" to "empower volunteers to deliver inclusive experiences."
+                                </p>
+                                <p class="text-orange-700">
+                                    <strong>Key shift:</strong> Recognizing volunteers as users, not just stakeholders,
+                                    completely changed our solution approach.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-emerald-50 to-teal-50 p-6 rounded-xl border-l-4 border-emerald-400">
+                                <h4 class="text-lg font-bold text-emerald-800 mb-3">Development Pivot Points</h4>
+                                <p class="text-emerald-700 mb-3">
+                                    Original concept: Physical audio devices. Pivot 1: Mobile app. Pivot 2: Web-based
+                                    solution. Each iteration was driven by constraint recognition (cost, maintenance,
+                                    app
+                                    store friction).
+                                </p>
+                                <p class="text-emerald-700">
+                                    <strong>Learning:</strong> Constraints are not limitations, they are design criteria
+                                    that
+                                    lead to more sustainable solutions.
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl border-l-4 border-blue-400">
+                                <h4 class="text-lg font-bold text-blue-800 mb-3">Delivery & Future Validation</h4>
+                                <p class="text-blue-700 mb-3">
+                                    Our prototypes demonstrate concept viability but represent beginning, not end, of
+                                    design
+                                    process. Implementation would require continuous user feedback and iterative
+                                    refinement.
+                                </p>
+                                <p class="text-blue-700">
+                                    <strong>Next steps:</strong> Partner with disability organizations for user
+                                    co-design
+                                    sessions and technical validation through working prototypes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </section>
 
-        <!-- Process Section -->
-        <section id="process" class="py-24 bg-white section-fade-in">
+        <!-- Solution Section -->
+        <section id="solution" class="py-24 bg-white section-fade-in">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Our Design Process</h2>
-                    <p class="text-xl text-slate-600">We adopted the Double Diamond model to guide our design journey.
-                    </p>
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Our Proposed Solution</h2>
+                    <p class="text-xl text-slate-600">Based on our process and research, here is our accessibility
+                        solution for Glasgow Botanic Gardens.</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
-                    <div class="solution-card p-6 text-center">
-                        <div
-                            class="bg-gradient-to-br from-red-500 to-pink-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
-                            1</div>
-                        <h3 class="text-xl font-bold mb-3">Discover</h3>
-                        <p class="text-slate-600">We conducted an informal, face-to-face interview with our partner and
-                            researched existing solutions in other public attractions.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                    <div class="solution-card group">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Visual Tour Mode (For Deaf Visitors)</h3>
+                            <p class="text-slate-600">A mobile-responsive web application featuring QR code scanning at
+                                key garden locations, providing access to British Sign Language (BSL) video
+                                interpretations, visual descriptions, high-resolution botanical photography, and
+                                text-based information tailored for deaf and hard-of-hearing visitors.</p>
+                        </div>
                     </div>
 
-                    <div class="solution-card p-6 text-center">
-                        <div
-                            class="bg-gradient-to-br from-orange-500 to-red-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
-                            2</div>
-                        <h3 class="text-xl font-bold mb-3">Define</h3>
-                        <p class="text-slate-600">We synthesized our research into key insights and formulated our "How
-                            Might We" statement to focus our efforts.</p>
+                    <div class="solution-card group">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3">Audio Tour Mode (For Blind Visitors)</h3>
+                            <p class="text-slate-600">An accessible audio-first interface with location-based navigation
+                                menus, professional narration with rich botanical descriptions, ambient garden sounds,
+                                and screen reader-optimized controls. Users can select specific garden areas and plants
+                                for detailed auditory experiences.</p>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="solution-card p-6 text-center">
-                        <div
-                            class="bg-gradient-to-br from-emerald-500 to-teal-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
-                            3</div>
-                        <h3 class="text-xl font-bold mb-3">Develop</h3>
-                        <p class="text-slate-600">We brainstormed diverse ideas and created low-fidelity prototypes
-                            (sketches) to explore potential solutions.</p>
-                    </div>
-
-                    <div class="solution-card p-6 text-center">
-                        <div
-                            class="bg-gradient-to-br from-blue-500 to-purple-500 text-white w-16 h-16 flex items-center justify-center rounded-2xl mx-auto mb-4 text-2xl font-bold">
-                            4</div>
-                        <h3 class="text-xl font-bold mb-3">Deliver</h3>
-                        <p class="text-slate-600">This final stage involves refining our proposed solution based on
-                            feedback and developing a clear implementation plan.</p>
-                    </div>
+                <div
+                    class="max-w-3xl mx-auto bg-gradient-to-br from-slate-50 to-emerald-50 p-8 rounded-2xl text-center mb-16">
+                    <h3 class="text-2xl font-bold mb-4 gradient-text">Why This Solution Works</h3>
+                    <p class="text-lg text-slate-700">
+                        Our dual-mode approach directly addresses the different needs we discovered through our
+                        research.
+                        It is <strong>low-cost</strong> (leveraging visitors' smartphones), <strong>sustainable</strong>
+                        (easy for volunteers to manage), and <strong>truly inclusive</strong> (tailored experiences
+                        rather
+                        than one-size-fits-all).
+                    </p>
                 </div>
             </div>
         </section>
@@ -291,260 +417,25 @@
                     <div class="solution-card p-8 bg-slate-50">
                         <div class="text-4xl mb-4"><i class="fa-solid fa-heart"></i></div>
                         <h3 class="text-2xl font-bold mb-4">Project Reflections</h3>
-                        <p class="text-slate-600 mb-4">Personal reflections on what we're proud of, lessons learned, and
+                        <p class="text-slate-600 mb-4">Reflections on what we are proud of, lessons learned, and
                             honest insights about our work and process.</p>
-                        <a href="#reflections" class="font-bold text-emerald-600 hover:underline">Read Reflections Essay
+                        <a href="#reflections" class="font-bold text-emerald-600 hover:underline">View Reflections
                             &rarr;</a>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Solution Section -->
-        <section id="solution" class="py-24 bg-white section-fade-in">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Our Proposed Solution</h2>
-                    <p class="text-xl text-slate-600">A low-cost, multi-faceted approach to enhance the tour experience.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-                    <div class="solution-card group">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-3">For Deaf Visitors</h3>
-                            <p class="text-slate-600">Placing QR codes at key points of interest that link to a webpage
-                                with visual descriptions and British Sign Language (BSL) video interpretations.</p>
-                        </div>
-                    </div>
-
-                    <div class="solution-card group">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold mb-3">For Blind Visitors</h3>
-                            <p class="text-slate-600">Developing a descriptive audio guide, accessible via their own
-                                devices, that includes rich descriptions, ambient sounds, and music to create a sensory
-                                experience.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div
-                    class="max-w-3xl mx-auto bg-gradient-to-br from-slate-50 to-emerald-50 p-8 rounded-2xl text-center">
-                    <h3 class="text-2xl font-bold mb-4 gradient-text">Justification</h3>
-                    <p class="text-lg text-slate-700">
-                        This solution is suitable because it directly addresses the project's constraints. It is
-                        <strong>low-cost</strong>, as it leverages visitors' own smartphones and avoids expensive
-                        hardware. It is <strong>sustainable</strong> for volunteers, as the digital content can be
-                        easily managed and updated. Most importantly, it is <strong>inclusive</strong> by providing
-                        distinct, tailored experiences rather than a one-size-fits-all approach.
-                    </p>
-                </div>
-
-                <!-- Prototype Evolution Section -->
-                <div class="mt-24">
-                    <div class="text-center mb-12">
-                        <h3 class="text-3xl md:text-4xl font-bold mb-4 gradient-text">Design Evolution</h3>
-                        <p class="text-xl text-slate-600">From initial sketches to refined digital prototypes</p>
-                    </div>
-
-                    <!-- Prototype Timeline -->
-                    <div class="relative">
-                        <!-- Timeline Line -->
-                        <div
-                            class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-emerald-400 to-emerald-600 h-full hidden md:block">
-                        </div>
-
-                        <!-- Lo-Fi Prototype -->
-                        <div class="flex flex-col md:flex-row items-center mb-16">
-                            <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0">
-                                <div class="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl">
-                                    <div class="text-center mb-6">
-                                        <div class="text-6xl mb-4"><i class="fa-solid fa-pencil"></i></div>
-                                        <h4 class="text-xl font-bold mb-4 text-slate-800">Week 1 Initial Sketch</h4>
-                                        <p class="text-slate-600 mb-6">Our early hand-drawn prototype exploring
-                                            accessible tour experiences for both deaf and blind visitors.</p>
-                                    </div>
-
-                                    <!-- Lo-Fi Prototype Image -->
-                                    <div class="bg-white p-4 rounded-lg shadow-sm mb-6">
-                                        <img src="images/week1-lofi-prototype.jpg" alt="Week 1 Lo-Fi Prototype Sketch"
-                                            class="w-full rounded-lg shadow-md border-2 border-amber-200">
-                                        <p class="text-sm text-slate-600 mt-3 italic text-center">Initial hand-drawn
-                                            sketch exploring accessible tour interface concepts</p>
-                                    </div>
-
-                                    <!-- Key Insights -->
-                                    <div class="bg-amber-100 p-4 rounded-lg">
-                                        <h5 class="font-bold text-amber-800 mb-4"><i class="fa-solid fa-lightbulb"></i>
-                                            Key Insights</h5>
-                                        <div class="grid md:grid-cols-2 gap-4 mb-4">
-                                            <div class="bg-amber-50 p-3 rounded-lg border border-amber-200">
-                                                <div class="flex items-center mb-2">
-                                                    <span class="text-amber-600 mr-2"><i
-                                                            class="fa-solid fa-bullseye"></i></span>
-                                                    <h6 class="font-semibold text-amber-800">Quick Visualization</h6>
-                                                </div>
-                                                <p class="text-xs text-amber-700">Effectively mapped spatial layout and
-                                                    touchpoint placement for QR codes and audio devices</p>
-                                            </div>
-                                            <div class="bg-amber-50 p-3 rounded-lg border border-amber-200">
-                                                <div class="flex items-center mb-2">
-                                                    <span class="text-amber-600 mr-2"><i
-                                                            class="fa-solid fa-magnifying-glass"></i></span>
-                                                    <h6 class="font-semibold text-amber-800">Revealed Gaps</h6>
-                                                </div>
-                                                <p class="text-xs text-amber-700">Highlighted missing content strategy
-                                                    and digital user journey design</p>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="bg-gradient-to-r from-amber-50 to-orange-50 p-3 rounded-lg border-l-4 border-amber-400">
-                                            <div class="flex items-start">
-                                                <span class="text-amber-600 mr-2 mt-1"><i
-                                                        class="fa-solid fa-star"></i></span>
-                                                <div>
-                                                    <h6 class="font-semibold text-amber-800 mb-1">Thinking Through
-                                                        Making</h6>
-                                                    <p class="text-xs text-amber-700 italic">Transformed abstract
-                                                        inclusivity goals into tangible spatial plans, fostering
-                                                        creative ideation</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Timeline Node -->
-                            <div
-                                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-amber-400 border-4 border-white rounded-full shadow-lg z-10">
-                            </div>
-
-                            <div class="md:w-1/2 md:pl-16">
-                                <div class="text-left">
-                                    <div class="flex items-center mb-3">
-                                        <span
-                                            class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium mr-3">Phase
-                                            1</span>
-                                        <span class="text-slate-500 text-sm">Week 1</span>
-                                    </div>
-                                    <h4 class="text-2xl font-bold mb-3 text-slate-800">Initial Concepts</h4>
-                                    <p class="text-slate-600 mb-4">Hand-drawn sketches exploring different approaches to
-                                        accessible tour experiences. These rough prototypes helped us visualize user
-                                        journeys and identify key interaction points.</p>
-                                    <ul class="text-sm text-slate-600 space-y-1">
-                                        <li class="flex items-center"><span
-                                                class="w-2 h-2 bg-amber-400 rounded-full mr-2"></span>User flow mapping
-                                        </li>
-                                        <li class="flex items-center"><span
-                                                class="w-2 h-2 bg-amber-400 rounded-full mr-2"></span>Interface layout
-                                            exploration</li>
-                                        <li class="flex items-center"><span
-                                                class="w-2 h-2 bg-amber-400 rounded-full mr-2"></span>Accessibility
-                                            feature ideation</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Hi-Fi Prototype -->
-                        <div class="flex flex-col md:flex-row-reverse items-center">
-                            <div class="md:w-1/2 md:pl-16 mb-8 md:mb-0">
-                                <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-6 rounded-xl">
-                                    <div class="text-center mb-6">
-                                        <div class="text-6xl mb-4"><i class="fa-solid fa-palette"></i></div>
-                                        <h4 class="text-xl font-bold mb-4 text-slate-800">High-Fidelity Prototypes</h4>
-                                        <p class="text-slate-600 mb-6">Explore our detailed mobile app design and
-                                            interactive prototypes.</p>
-                                    </div>
-
-                                    <!-- Two Action Cards -->
-                                    <div class="grid md:grid-cols-2 gap-6 mb-6">
-                                        <!-- App Screens & User Flow Card -->
-                                        <a href="app-screens.html" class="group block">
-                                            <div
-                                                class="bg-white p-6 rounded-lg shadow-sm border-2 border-transparent hover:border-emerald-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                                                <div class="text-center">
-                                                    <div class="text-4xl mb-3"><i class="fa-solid fa-mobile"></i></div>
-                                                    <h5 class="font-bold text-emerald-800 mb-3">App Screens & User Flow
-                                                    </h5>
-                                                    <p class="text-sm text-slate-600 mb-4">Explore each screen of our
-                                                        mobile app and see how users navigate through the accessible
-                                                        tour experience.</p>
-
-                                                    <div
-                                                        class="bg-emerald-100 p-3 rounded group-hover:bg-emerald-200 transition-colors">
-                                                        <p class="text-xs text-emerald-800 font-medium">View Detailed
-                                                            Screens <i class="fa-solid fa-arrow-right"></i></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-
-                                        <!-- Figma Prototype Card -->
-                                        <a href="https://figma.com/your-prototype-link" target="_blank"
-                                            class="group block">
-                                            <div
-                                                class="bg-white p-6 rounded-lg shadow-sm border-2 border-transparent hover:border-purple-300 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                                                <div class="text-center">
-                                                    <div class="text-4xl mb-3"><i class="fa-brands fa-figma"></i></div>
-                                                    <h5 class="font-bold text-purple-800 mb-3">Interactive Figma
-                                                        Prototype</h5>
-                                                    <p class="text-sm text-slate-600 mb-4">Experience the full
-                                                        interactive prototype with clickable elements and realistic user
-                                                        interactions.</p>
-                                                    <div
-                                                        class="bg-purple-100 p-3 rounded group-hover:bg-purple-200 transition-colors">
-                                                        <p class="text-xs text-purple-800 font-medium">Open Figma
-                                                            Prototype <i
-                                                                class="fa-solid fa-arrow-up-right-from-square"></i></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!-- Quick Overview -->
-                                    <div class="bg-gradient-to-r from-emerald-100 to-teal-100 p-4 rounded-lg">
-                                        <p class="text-sm text-emerald-800 text-center">
-                                            <strong>Complete Design System:</strong> From initial wireframes to fully
-                                            interactive prototypes, showcasing accessibility-first design principles.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Timeline Node -->
-                            <div
-                                class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-emerald-400 border-4 border-white rounded-full shadow-lg z-10">
-                            </div>
-
-                            <div class="md:w-1/2 md:pr-16">
-                                <div class="text-left">
-                                    <div class="flex items-center mb-3">
-                                        <span
-                                            class="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium mr-3">Phase
-                                            2</span>
-                                        <span class="text-slate-500 text-sm">Week 2-3</span>
-                                    </div>
-                                    <h4 class="text-2xl font-bold mb-3 text-slate-800">Refined Design</h4>
-                                    <p class="text-slate-600 mb-4">High-fidelity Figma prototypes incorporating user
-                                        feedback and accessibility best practices. These detailed mockups demonstrate
-                                        the complete user experience with realistic content and interactions.</p>
-                                    <ul class="text-sm text-slate-600 space-y-1">
-                                        <li class="flex items-center"><span
-                                                class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>Interactive
-                                            prototyping</li>
-                                        <li class="flex items-center"><span
-                                                class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>Visual design
-                                            system</li>
-                                        <li class="flex items-center"><span
-                                                class="w-2 h-2 bg-emerald-400 rounded-full mr-2"></span>Accessibility
-                                            compliance</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                <!-- Transition to Reflections -->
+                <div class="mt-16 text-center">
+                    <div class="max-w-3xl mx-auto bg-gradient-to-r from-slate-50 to-emerald-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-4">From Process to Reflection</h3>
+                        <p class="text-lg text-slate-600">
+                            Our journey through research, design, and development has given us valuable insights about
+                            inclusive design, stakeholder collaboration, and the iterative nature of solving complex
+                            problems.
+                            Here are our honest reflections on what we learned, what we are proud of, and what we would
+                            do
+                            differently.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -557,266 +448,223 @@
                 <div class="text-center mb-20">
                     <h2 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">Reflections</h2>
                     <p class="text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                        Individual insights, collaborative learning, and actionable takeaways from our design journey.
+                        Reflecting on our design journey, we share our proudest achievements, key learnings, and
+                        insights from working with our partners.
                     </p>
                     <div class="w-32 h-1 bg-gradient-to-r from-emerald-400 to-teal-500 mx-auto rounded-full mt-6"></div>
                 </div>
 
-                <!-- Partner Interactions - Featured Section -->
-                <div class="mb-16">
-                    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100 max-w-4xl mx-auto">
-                        <div class="flex flex-col md:flex-row items-center gap-8">
-                            <div class="flex-shrink-0">
-                                <div
-                                    class="w-24 h-24 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white text-3xl shadow-lg">
-                                    <i class="fa-solid fa-handshake"></i>
-                                </div>
+                <!-- Reflection on Partner Interactions -->
+                <div class="mb-20">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-12">
+                            <div
+                                class="w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center text-white text-3xl mx-auto mb-6 shadow-lg">
+                                <i class="fa-solid fa-handshake"></i>
                             </div>
-                            <div class="flex-1 text-center md:text-left">
-                                <h3 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">Partner Interactions</h3>
-                                <p class="text-lg text-slate-600 leading-relaxed">
-                                    <em>Our interviews and ongoing communication with the Friends of Glasgow Botanic
-                                        Gardens were essential in shaping our understanding of real user needs and
-                                        volunteer constraints. These interactions taught us the value of stakeholder
-                                        engagement and collaborative problem-solving.</em>
+                            <h3 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Reflection on Partner
+                                Interactions</h3>
+                            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full">
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100">
+                            <div class="prose prose-lg max-w-none text-slate-700 leading-relaxed">
+                                <p class="text-xl mb-6 font-medium text-slate-800">
+                                    Our collaboration with the Friends of Glasgow Botanic Gardens proved to be one of
+                                    the most valuable and eye-opening aspects of this project.
                                 </p>
-                                <div class="mt-6 inline-flex items-center text-emerald-600 font-medium">
-                                    <i class="fa-solid fa-users mr-2"></i>
-                                    Collaborative Learning
+
+                                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                                    <div class="bg-blue-50 p-6 rounded-2xl">
+                                        <h4 class="text-lg font-bold text-blue-800 mb-4"><i
+                                                class="fa-solid fa-circle-question mr-2"></i>Initial Interview Insights
+                                        </h4>
+                                        <p class="text-blue-700 mb-4">
+                                            Our face-to-face interview with the volunteer guides revealed constraints we
+                                            had not initially considered. The volunteers emphasized the need for
+                                            low-cost, sustainable solutions that would not overwhelm their existing
+                                            resources or require extensive technical training.
+                                        </p>
+                                        <p class="text-blue-700">
+                                            <strong>Key learning:</strong> Real-world constraints often drive the most
+                                            innovative solutions. The budget and maintenance limitations pushed us
+                                            toward smartphone-based solutions rather than expensive custom hardware.
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-emerald-50 p-6 rounded-2xl">
+                                        <h4 class="text-lg font-bold text-emerald-800 mb-4"><i
+                                                class="fa-solid fa-comment mr-2"></i>Ongoing Communication</h4>
+                                        <p class="text-emerald-700 mb-4">
+                                            Throughout the design process, we maintained regular contact with our
+                                            partners to validate our assumptions and gather feedback on our evolving
+                                            prototypes. Their input helped us refine our understanding of what would
+                                            actually work in practice.
+                                        </p>
+                                        <p class="text-emerald-700">
+                                            <strong>Key learning:</strong> Stakeholder engagement should not be a
+                                            one-time event. Continuous dialogue ensures solutions remain grounded in
+                                            real needs rather than theoretical assumptions.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div
+                                    class="bg-gradient-to-r from-slate-50 to-blue-50 p-6 rounded-2xl border-l-4 border-blue-400">
+                                    <h4 class="text-lg font-bold text-slate-800 mb-4">What We Learned About Partnership
+                                    </h4>
+                                    <p class="mb-4">
+                                        Working with the Friends of Glasgow Botanic Gardens taught us that successful
+                                        design partnerships require more than just gathering requirements. They demand
+                                        empathy, active listening, and a willingness to see problems through the lens of
+                                        those who will implement and maintain the solutions.
+                                    </p>
+                                    <p class="mb-4">
+                                        The volunteers' passion for making the gardens accessible to everyone was
+                                        infectious and helped us stay motivated when tackling complex accessibility
+                                        challenges. Their practical wisdom about visitor behavior and garden operations
+                                        grounded our design decisions in reality.
+                                    </p>
+                                    <p class="font-medium text-slate-800">
+                                        <strong>Most importantly:</strong> We learned that the best design solutions
+                                        emerge from genuine collaboration, where both designers and stakeholders
+                                        contribute unique expertise to solve shared challenges.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Personal Reflections Grid -->
-                <div class="mb-16">
-                    <h3 class="text-3xl font-bold text-center text-slate-800 mb-12">Individual Perspectives</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                        <!-- Matthias Lim -->
-                        <div class="group">
+                <!-- Essay: What We're Proud Of -->
+                <div class="mb-20">
+                    <div class="max-w-6xl mx-auto">
+                        <div class="text-center mb-12">
                             <div
-                                class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-slate-100 h-full flex flex-col">
-                                <div class="flex items-center mb-6">
-                                    <div
-                                        class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                        M
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-slate-800">Matthias Lim</h4>
-                                        <div class="text-emerald-600 text-sm font-medium">Team Lead</div>
-                                    </div>
-                                </div>
-                                <div class="flex-1">
-                                    <div class="text-4xl text-emerald-400 mb-4">"</div>
-                                    <p class="text-slate-600 leading-relaxed -mt-6">This project taught me the
-                                        importance of empathy and listening to real user needs. Working with my team and
-                                        our partners has been a rewarding experience in inclusive design.</p>
-                                </div>
-                                <div class="mt-4 text-emerald-600 text-sm font-medium">
-                                    <i class="fa-solid fa-heart mr-1"></i> Empathy & Leadership
-                                </div>
+                                class="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center text-white text-3xl mx-auto mb-6 shadow-lg">
+                                <i class="fa-solid fa-award"></i>
+                            </div>
+                            <h3 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Reflecting on Our Work</h3>
+                            <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto rounded-full">
                             </div>
                         </div>
 
-                        <!-- Chee Jian Chuah -->
-                        <div class="group">
-                            <div
-                                class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-slate-100 h-full flex flex-col">
-                                <div class="flex items-center mb-6">
-                                    <div
-                                        class="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                        C
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-slate-800">Chee Jian Chuah</h4>
-                                        <div class="text-orange-600 text-sm font-medium">Design Researcher</div>
-                                    </div>
-                                </div>
-                                <div class="flex-1">
-                                    <div class="text-4xl text-orange-400 mb-4">"</div>
-                                    <p class="text-slate-600 leading-relaxed -mt-6">I learned how prototyping can be a
-                                        tool for discovery, not just presentation. Iterating quickly helped us find
-                                        better solutions for accessibility.</p>
-                                </div>
-                                <div class="mt-4 text-orange-600 text-sm font-medium">
-                                    <i class="fa-solid fa-cogs mr-1"></i> Prototyping & Iteration
-                                </div>
-                            </div>
-                        </div>
+                        <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100">
+                            <div class="prose prose-lg max-w-none text-slate-700 leading-relaxed">
 
-                        <!-- Joel Koh -->
-                        <div class="group">
-                            <div
-                                class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-slate-100 h-full flex flex-col">
-                                <div class="flex items-center mb-6">
-                                    <div
-                                        class="w-16 h-16 bg-gradient-to-br rounded-2xl flex items-center justify-center text-white text-2xl font-bold mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                        <img src="images/joel.jpg" alt="Joel"
-                                            class="w-full h-full object-cover rounded-2xl">
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-slate-800">Joel Koh</h4>
-                                    </div>
-                                </div>
-                                <div class="flex-1">
-                                    <div class="text-4xl text-purple-400 mb-4">"</div>
-                                    <p class="text-slate-600 leading-relaxed -mt-6">This journey was a true team effort
-                                        where we had to combine diverse ideas designed for blind and deaf users. It may
-                                        have been a complex challenge but we were able to come up with a meaningful and
-                                        inclusive solution.</p>
-                                </div>
-                            </div>
-                        </div>
+                                <!-- What We're Proud Of -->
+                                <div class="mb-12">
+                                    <h4 class="text-2xl font-bold text-emerald-800 mb-6 flex items-center">
+                                        <i class="fa-solid fa-star mr-3"></i>What We Are Proud Of
+                                    </h4>
 
-                        <!-- Wan Ying Huang -->
-                        <div class="group">
-                            <div
-                                class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-slate-100 h-full flex flex-col">
-                                <div class="flex items-center mb-6">
-                                    <div
-                                        class="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                        W
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-slate-800">Wan Ying Huang</h4>
-                                        <div class="text-amber-600 text-sm font-medium">User Advocate</div>
-                                    </div>
-                                </div>
-                                <div class="flex-1">
-                                    <div class="text-4xl text-amber-400 mb-4">"</div>
-                                    <p class="text-slate-600 leading-relaxed -mt-6">I discovered how important it is to
-                                        test ideas with real users. The feedback we received shaped our final solution
-                                        in meaningful ways.</p>
-                                </div>
-                                <div class="mt-4 text-amber-600 text-sm font-medium">
-                                    <i class="fa-solid fa-search mr-1"></i> User Testing & Feedback
-                                </div>
-                            </div>
-                        </div>
+                                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                        <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
+                                            <h5 class="font-bold text-emerald-800 mb-3">Accessibility-First Approach
+                                            </h5>
+                                            <p class="text-emerald-700">
+                                                We are particularly proud of how we approached accessibility not as an
+                                                afterthought, but as the core design principle. Rather than creating one
+                                                solution and adapting it, we designed two distinct but complementary
+                                                experiences tailored to the specific needs of deaf and blind visitors.
+                                            </p>
+                                        </div>
 
-                        <!-- Yong Lin Chua -->
-                        <div class="group">
-                            <div
-                                class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-slate-100 h-full flex flex-col">
-                                <div class="flex items-center mb-6">
-                                    <div
-                                        class="w-16 h-16 bg-gradient-to-br from-rose-400 to-red-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                        Y
+                                        <div class="bg-emerald-50 p-6 rounded-xl border border-emerald-100">
+                                            <h5 class="font-bold text-emerald-800 mb-3">Realistic Constraint Handling
+                                            </h5>
+                                            <p class="text-emerald-700">
+                                                Our solution respects the real-world constraints of a volunteer-run
+                                                organization. By leveraging visitors' smartphones and creating
+                                                maintainable digital content, we have designed something that could
+                                                actually be implemented and sustained.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-slate-800">Yong Lin Chua</h4>
-                                        <div class="text-rose-600 text-sm font-medium">Impact Focused</div>
-                                    </div>
-                                </div>
-                                <div class="flex-1">
-                                    <div class="text-4xl text-rose-400 mb-4">"</div>
-                                    <p class="text-slate-600 leading-relaxed -mt-6">This journey has shown me the value
-                                        of inclusive design and the impact it can have on people's lives. I'm proud of
-                                        what we've achieved together.</p>
-                                </div>
-                                <div class="mt-4 text-rose-600 text-sm font-medium">
-                                    <i class="fa-solid fa-star mr-1"></i> Inclusive Design & Impact
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Shanice Yeong -->
-                        <div class="group">
-                            <div
-                                class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-slate-100 h-full flex flex-col">
-                                <div class="flex items-center mb-6">
-                                    <div
-                                        class="w-16 h-16 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mr-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                        S
-                                    </div>
-                                    <div>
-                                        <h4 class="text-xl font-bold text-slate-800">Shanice Yeong</h4>
-                                        <div class="text-green-600 text-sm font-medium">Accessibility Advocate</div>
-                                    </div>
-                                </div>
-                                <div class="flex-1">
-                                    <div class="text-4xl text-green-400 mb-4">"</div>
-                                    <p class="text-slate-600 leading-relaxed -mt-6">I learned that accessibility is not
-                                        just a feature, but a mindset. Working on this project has made me more aware of
-                                        the challenges others face.</p>
-                                </div>
-                                <div class="mt-4 text-green-600 text-sm font-medium">
-                                    <i class="fa-solid fa-universal-access mr-1"></i> Accessibility Mindset
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                    <p class="text-lg mb-6">
+                                        <strong>The evolution from lo-fi to hi-fi prototypes represents genuine
+                                            learning.</strong> Our initial sketches captured spatial concepts well, but
+                                        the digital prototypes demonstrate how those concepts translate into usable
+                                        interfaces. The dual-mode approach (Audio Tour vs Visual Tour) emerged from
+                                        really listening to user needs rather than forcing a one-size-fits-all solution.
+                                    </p>
 
-                <!-- Actionable Insights - Enhanced -->
-                <div class="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-slate-100 max-w-5xl mx-auto">
-                    <div class="text-center mb-8">
-                        <div
-                            class="inline-block bg-gradient-to-r from-emerald-500 to-teal-500 text-white px-6 py-3 rounded-full text-lg font-bold mb-4 shadow-lg">
-                            <i class="fa-solid fa-lightbulb mr-2"></i>
-                            Key Actionable Insights
-                        </div>
-                        <p class="text-slate-600">Learnings that will shape our future approach to design challenges</p>
-                    </div>
+                                    <p class="mb-6">
+                                        We are also proud of our research methodology. The combination of stakeholder
+                                        interviews, accessibility research, and iterative prototyping gave us confidence
+                                        that our solution addresses real needs. The comprehensive documentation of our
+                                        process, from initial interviews to final prototypes, demonstrates thoughtful
+                                        design thinking.
+                                    </p>
+                                </div>
 
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div
-                            class="bg-gradient-to-br from-emerald-50 to-teal-50 p-6 rounded-2xl border border-emerald-100">
-                            <div class="flex items-center mb-4">
+                                <!-- Areas for Growth -->
+                                <div class="mb-12">
+                                    <h4 class="text-2xl font-bold text-amber-800 mb-6 flex items-center">
+                                        <i class="fa-solid fa-triangle-exclamation mr-3"></i>Areas Where We Could Have
+                                        Done Better
+                                    </h4>
+
+                                    <div class="bg-amber-50 p-6 rounded-xl border border-amber-100 mb-6">
+                                        <h5 class="font-bold text-amber-800 mb-3">Limited User Testing</h5>
+                                        <p class="text-amber-700 mb-4">
+                                            While we conducted thorough stakeholder interviews with the volunteers, we
+                                            did not have the opportunity to test our prototypes with actual blind or
+                                            deaf
+                                            users. This means our solution, while informed by research and best
+                                            practices, has not been validated by the people who would actually use it.
+                                        </p>
+                                        <p class="text-amber-700">
+                                            <strong>What we would do differently:</strong> Reach out to local
+                                            accessibility organizations earlier in the process to arrange user testing
+                                            sessions with our target users.
+                                        </p>
+                                    </div>
+
+                                    <div class="bg-amber-50 p-6 rounded-xl border border-amber-100 mb-6">
+                                        <h5 class="font-bold text-amber-800 mb-3">Technical Implementation Gap</h5>
+                                        <p class="text-amber-700 mb-4">
+                                            Our prototypes are beautifully designed but remain mockups. We have not
+                                            built
+                                            a working version that demonstrates technical feasibility, particularly
+                                            around content management for volunteers or the QR code system integration.
+                                        </p>
+                                        <p class="text-amber-700">
+                                            <strong>What we would do differently:</strong> Develop at least a basic
+                                            working prototype to validate technical assumptions and demonstrate
+                                            implementation feasibility.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Honest Assessment -->
                                 <div
-                                    class="w-12 h-12 bg-emerald-500 rounded-xl flex items-center justify-center text-white mr-4">
-                                    <i class="fa-solid fa-cogs"></i>
+                                    class="bg-gradient-to-r from-slate-50 to-emerald-50 p-8 rounded-2xl border-l-4 border-emerald-400">
+                                    <h4 class="text-xl font-bold text-slate-800 mb-4">Overall Assessment</h4>
+                                    <p class="mb-4">
+                                        This project represents a solid foundation for inclusive design at Glasgow
+                                        Botanic Gardens. Our solution is conceptually sound, grounded in real
+                                        stakeholder needs, and designed with genuine care for accessibility. The
+                                        dual-mode approach demonstrates sophisticated thinking about different user
+                                        needs rather than superficial accommodation.
+                                    </p>
+                                    <p class="mb-4">
+                                        However, we recognize that good design does not end with prototypes. The true
+                                        test of our solution would be in implementation, user adoption, and long-term
+                                        sustainability. While we are confident in our research and design process, we
+                                        remain humble about the gap between designed solutions and lived experience.
+                                    </p>
+                                    <p class="font-medium text-slate-800">
+                                        <strong>What we are most proud of:</strong> We approached this challenge with
+                                        empathy, rigor, and genuine commitment to inclusion. Even if our solution is not
+                                        perfect, it represents thoughtful design thinking applied to a meaningful
+                                        problem.
+                                    </p>
                                 </div>
-                                <h4 class="font-bold text-emerald-800 text-lg">Design Process Learning</h4>
                             </div>
-                            <ul class="text-slate-700 space-y-3">
-                                <li class="flex items-start">
-                                    <i class="fa-solid fa-check-circle text-emerald-500 mr-3 mt-1"></i>
-                                    <span>Prioritize user feedback over assumptions</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fa-solid fa-check-circle text-emerald-500 mr-3 mt-1"></i>
-                                    <span>Use prototyping for discovery, not just presentation</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fa-solid fa-check-circle text-emerald-500 mr-3 mt-1"></i>
-                                    <span>Test ideas early and iterate quickly</span>
-                                </li>
-                            </ul>
                         </div>
-
-                        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-2xl border border-blue-100">
-                            <div class="flex items-center mb-4">
-                                <div
-                                    class="w-12 h-12 bg-blue-500 rounded-xl flex items-center justify-center text-white mr-4">
-                                    <i class="fa-solid fa-users"></i>
-                                </div>
-                                <h4 class="font-bold text-blue-800 text-lg">Collaboration & Stakeholders</h4>
-                            </div>
-                            <ul class="text-slate-700 space-y-3">
-                                <li class="flex items-start">
-                                    <i class="fa-solid fa-check-circle text-blue-500 mr-3 mt-1"></i>
-                                    <span>Engage partners throughout the process</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fa-solid fa-check-circle text-blue-500 mr-3 mt-1"></i>
-                                    <span>Consider constraints as design opportunities</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <i class="fa-solid fa-check-circle text-blue-500 mr-3 mt-1"></i>
-                                    <span>Focus on sustainable, low-cost solutions</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="mt-8 p-6 bg-slate-50 rounded-2xl border-l-4 border-emerald-500">
-                        <p class="text-slate-600 italic leading-relaxed">
-                            <strong>Looking Forward:</strong> These insights will guide future accessibility projects
-                            and inform our approach to inclusive design challenges, ensuring we maintain a
-                            user-centered, collaborative approach to problem-solving.
-                        </p>
                     </div>
                 </div>
             </div>

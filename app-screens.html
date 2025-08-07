@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Screens & User Flow | Glasgow Botanic Gardens Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <!-- Flowbite CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body class="text-slate-800">
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-emerald-600 text-white px-4 py-2 rounded-md z-50">Skip
+        to main content</a>
+
+    <!-- Header -->
+    <header class="nav-blur fixed top-0 z-50 w-full">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <ul class="hidden md:flex space-x-6 items-center">
+                <li><a href="index.html" class="hover:text-emerald-600 transition-colors"><i
+                            class="fa-solid fa-arrow-left"></i> Back to Main</a></li>
+                <li><a href="index.html#problem" class="hover:text-emerald-600 transition-colors">Problem</a></li>
+                <li><a href="index.html#team" class="hover:text-emerald-600 transition-colors">Team</a></li>
+                <li><a href="index.html#process" class="hover:text-emerald-600 transition-colors">Process</a></li>
+                <li><a href="interviews.html" class="hover:text-emerald-600 transition-colors">Interviews</a></li>
+                <li><a href="references.html" class="hover:text-emerald-600 transition-colors">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-20" id="main-content">
+        <!-- Hero Section -->
+        <section class="py-16 bg-gradient-to-br from-emerald-50 to-teal-50">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 gradient-text">
+                    Mobile App Screens
+                </h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 text-slate-600">
+                    Detailed walkthrough of our accessible tour app interface and user journey
+                </p>
+                <div class="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto rounded-full"></div>
+            </div>
+        </section>
+
+        <!-- Design Iterations Section -->
+        <section class="py-12 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-2xl md:text-3xl font-bold mb-6 gradient-text">Design Process & Iterations</h2>
+                    <p class="text-slate-600 mb-8">Explore our complete design evolution from initial concepts to final
+                        implementation</p>
+
+                    <!-- Design Iterations Card -->
+                    <a href="https://www.figma.com/design/UPMAkQzoa9pPpDrEIbaar9/Group21-Prototype?node-id=0-1&t=EdXtj6sX4a6YNPRF-1"
+                        target="_blank" rel="noopener" class="group block max-w-md mx-auto"
+                        aria-label="View Design Process - Opens in new tab">
+                        <div
+                            class="bg-white p-8 rounded-xl shadow-lg border-2 border-transparent hover:border-purple-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+                            <div class="text-center">
+                                <div class="text-5xl mb-4"><i class="fa-brands fa-figma text-purple-600"
+                                        aria-hidden="true"></i></div>
+                                <h3 class="text-xl font-bold text-purple-800 mb-3">Hi-Fi Prototype Iterations</h3>
+                                <p class="text-slate-600 mb-6">View our complete design evolution from 1st to 2nd
+                                    iteration, showing all screen flows, user journeys, and accessibility improvements.
+                                </p>
+                                <div class="bg-purple-100 p-4 rounded-lg group-hover:bg-purple-200 transition-colors">
+                                    <p class="text-sm text-purple-800 font-medium">View Design Process <i
+                                            class="fa-solid fa-arrow-up-right-from-square ml-1" aria-hidden="true"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
+            </a>
+            </div>
+            </div>
+        </section>
+
+        <!-- User Journey Overview -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">User Journey Overview</h2>
+
+                <div class="max-w-6xl mx-auto">
+                    <!-- Initial Step -->
+                    <div class="text-center mb-12">
+                        <div class="flex flex-col items-center">
+                            <div
+                                class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center text-3xl mb-4">
+                                <i class="fa-solid fa-people-group"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-emerald-800 mb-2">1. Choose Tour Mode</h3>
+                            <p class="text-slate-600 max-w-md">Select your preferred accessibility format: Audio Tour or
+                                Visual Tour</p>
+                        </div>
+                    </div>
+
+                    <!-- Branching Paths -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <!-- Audio Tour Path -->
+                        <div class="bg-blue-50 p-6 rounded-xl">
+                            <h4 class="text-lg font-bold text-blue-800 mb-4 text-center"><i
+                                    class="fa-solid fa-headphones"></i> Audio Tour Path</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center text-sm mr-3">
+                                        2</div>
+                                    <div>
+                                        <p class="font-semibold text-blue-800">Location Selection</p>
+                                        <p class="text-xs text-blue-600">Voice-guided location menu</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center text-sm mr-3">
+                                        3</div>
+                                    <div>
+                                        <p class="font-semibold text-blue-800">Audio Player Interface</p>
+                                        <p class="text-xs text-blue-600">Screen reader optimized controls</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-8 h-8 bg-blue-200 rounded-full flex items-center justify-center text-sm mr-3">
+                                        4</div>
+                                    <div>
+                                        <p class="font-semibold text-blue-800">Listen to Content</p>
+                                        <p class="text-xs text-blue-600">Audio descriptions and narration</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visual Tour Path -->
+                        <div class="bg-green-50 p-6 rounded-xl">
+                            <h4 class="text-lg font-bold text-green-800 mb-4 text-center"><i
+                                    class="fa-solid fa-camera"></i> Visual Tour Path</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center text-sm mr-3">
+                                        2</div>
+                                    <div>
+                                        <p class="font-semibold text-green-800">Scan QR Code</p>
+                                        <p class="text-xs text-green-600">Visual feedback and confirmations</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center text-sm mr-3">
+                                        3</div>
+                                    <div>
+                                        <p class="font-semibold text-green-800">Content Selection</p>
+                                        <p class="text-xs text-green-600">BSL videos, text, or image galleries</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-8 h-8 bg-green-200 rounded-full flex items-center justify-center text-sm mr-3">
+                                        4</div>
+                                    <div>
+                                        <p class="font-semibold text-green-800">Visual Content</p>
+                                        <p class="text-xs text-green-600">BSL videos and visual information</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Common Features -->
+                    <div class="bg-slate-50 p-6 rounded-xl text-center">
+                        <h4 class="font-bold text-slate-800 mb-3">Common Features Across Both Paths</h4>
+                        <div class="grid md:grid-cols-3 gap-4 text-sm">
+                            <div class="flex items-center justify-center">
+                                <span class="w-2 h-2 bg-slate-400 rounded-full mr-2"></span>
+                                <span>Location-Based Content</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <span class="w-2 h-2 bg-slate-400 rounded-full mr-2"></span>
+                                <span>Accessibility-First Design</span>
+                            </div>
+                            <div class="flex items-center justify-center">
+                                <span class="w-2 h-2 bg-slate-400 rounded-full mr-2"></span>
+                                <span>Personalized Experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Detailed Screen Breakdown -->
+        <section class="py-16 bg-slate-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Screen-by-Screen Breakdown
+                </h2>
+
+                <div class="max-w-6xl mx-auto space-y-16">
+
+                    <!-- Choose Tour Mode Screen -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-xl mr-4">
+                                        <i class="fa-solid fa-leaf"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-emerald-800">Choose Tour Mode</h3>
+                                </div>
+                                <p class="text-slate-600 mb-6">The initial screen where users select their preferred
+                                    accessibility mode for the garden tour experience.</p>
+
+                                <h4 class="font-bold text-slate-800 mb-3">Key Features:</h4>
+                                <ul class="space-y-2 text-slate-600 mb-6">
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Simple, clear
+                                        two-option interface</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Large,
+                                        touch-friendly buttons with icons</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>Minimalist design
+                                        reducing cognitive load</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-emerald-400 rounded-full mr-3"></span>High contrast
+                                        elements for accessibility</li>
+                                </ul>
+
+                                <div class="bg-emerald-50 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-emerald-800 mb-2">Design Philosophy</h5>
+                                    <p class="text-sm text-emerald-700">Clean, intuitive interface that immediately
+                                        presents the two primary accessibility options without overwhelming the user.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-b from-slate-100 to-slate-200 rounded-xl p-8 text-center">
+                                <div class="bg-white rounded-2xl p-4 shadow-lg max-w-xs mx-auto">
+                                    <!-- Placeholder for actual screen image -->
+                                    <img src="images/choose-tour-mode-screen.png" alt="Choose Tour Mode Screen"
+                                        class="w-full rounded-xl shadow-md">
+                                    <p class="text-xs text-slate-500 mt-2">Choose Tour Mode - Initial Screen</p>
+
+                                    <!-- Fallback helper text -->
+                                    <div class="text-xs text-slate-400 mt-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Audio Tour Location Selection Screen -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-blue-500">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div class="bg-gradient-to-b from-blue-50 to-blue-100 rounded-xl p-8">
+                                <!-- Side by Side Images -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <!-- Audio Location Menu Screen -->
+                                    <div class="text-center">
+                                        <img src="images/audio-location-menu-screen.png"
+                                            class="w-full h-auto rounded-lg shadow-md" alt="Audio Location Menu Screen">
+                                        <p class="text-xs text-blue-600 mt-2 font-medium">Location Selection</p>
+                                    </div>
+                                    <!-- Audio Location Details Screen -->
+                                    <div class="text-center">
+                                        <img src="images/audio-location-details-screen.png"
+                                            class="w-full h-auto rounded-lg shadow-md"
+                                            alt="Audio Location Details Screen">
+                                        <p class="text-xs text-blue-600 mt-2 font-medium">Plant Details</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-xl mr-4">
+                                        <i class="fa-solid fa-headphones"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-blue-800">Audio Tour - Location Selection</h3>
+                                </div>
+                                <p class="text-slate-600 mb-6">Two-screen guided audio tour interface: area selection
+                                    and plant-specific audio content for accessibility-focused navigation.</p>
+
+                                <h4 class="font-bold text-slate-800 mb-3">Screen Features:</h4>
+                                <ul class="space-y-2 text-slate-600 mb-6">
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Screen 1: Choose area
+                                        (Kibble Palace, Glasshouse, Wild Rose Garden)</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Screen 2: Select
+                                        specific plants with audio tour options</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Voice-over descriptions
+                                        for each location and plant</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Play button integration
+                                        for immediate audio access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Tour QR Scanner Screen -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-green-500">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-xl mr-4">
+                                        <i class="fa-solid fa-qrcode"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-green-800">Visual & QR Tour</h3>
+                                </div>
+                                <p class="text-slate-600 mb-6">Accessible QR code scanning interface with clear visual
+                                    feedback, designed specifically for deaf and hard-of-hearing visitors to access
+                                    location-based content.</p>
+
+                                <h4 class="font-bold text-slate-800 mb-3">QR Scanner Features:</h4>
+                                <ul class="space-y-2 text-slate-600 mb-6">
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Large, clear scanning
+                                        viewfinder with corner guides</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>High contrast visual
+                                        indicators for successful scans</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Intuitive back
+                                        navigation and clear interface</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Camera-based QR code
+                                        detection for instant content access</li>
+                                </ul>
+
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-green-800 mb-2">Accessibility Focus</h5>
+                                    <p class="text-sm text-green-700">The QR scanner provides immediate visual feedback
+                                        and guides users through the scanning process with clear visual cues, making it
+                                        easy for visitors to access location-specific content.</p>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-b from-green-50 to-green-100 rounded-xl p-8 text-center">
+                                <div class="bg-white rounded-2xl p-4 shadow-lg max-w-xs mx-auto">
+                                    <img src="images/visual-qr-scanner-screen.png" alt="Visual Tour QR Scanner"
+                                        class="w-full rounded-xl shadow-md">
+                                    <p class="text-xs text-slate-500 mt-2">Visual Tour - QR Scanner</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Audio Tour Content Player -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-blue-500">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div class="bg-gradient-to-b from-blue-50 to-blue-100 rounded-xl p-8 text-center">
+                                <div class="bg-white rounded-2xl p-4 shadow-lg max-w-xs mx-auto">
+                                    <img src="images/audio-player-screen.png" alt="Audio Content Player"
+                                        class="w-full rounded-xl shadow-md">
+                                    <p class="text-xs text-slate-500 mt-2">Audio Tour - Content Player</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-xl mr-4">
+                                        <i class="fa-solid fa-audio-description"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-blue-800">Guided Audio Tour Player</h3>
+                                </div>
+                                <p class="text-slate-600 mb-6">Immersive audio experience featuring plant-specific
+                                    content with beautiful botanical imagery, professional narration, and accessible
+                                    playback controls.</p>
+
+                                <h4 class="font-bold text-slate-800 mb-3">Player Features:</h4>
+                                <ul class="space-y-2 text-slate-600 mb-6">
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>High-quality botanical
+                                        photography with plant identification</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Professional audio
+                                        narration with clear pronunciation</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Large, accessible
+                                        playback controls (previous, play/pause, next)</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Progress timeline with
+                                        current time and total duration</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-blue-400 rounded-full mr-3"></span>Scientific and common
+                                        plant names displayed</li>
+                                </ul>
+
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-blue-800 mb-2">Accessibility Design</h5>
+                                    <p class="text-sm text-blue-700">Large, contrasting controls make navigation easy
+                                        for users with visual impairments, while the clear audio and visual presentation
+                                        supports various accessibility needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Tour Content Selection -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-green-500">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-xl mr-4">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-green-800">Visual Plant Information</h3>
+                                </div>
+                                <p class="text-slate-600 mb-6">Comprehensive plant profiles featuring detailed botanical
+                                    information, conservation status, and educational content designed for visual
+                                    accessibility.</p>
+
+                                <h4 class="font-bold text-slate-800 mb-3">Information Features:</h4>
+                                <ul class="space-y-2 text-slate-600 mb-6">
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>High-quality botanical
+                                        photography and plant identification</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Conservation status
+                                    </li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Scientific and common
+                                        names</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Regional distribution
+                                        maps and ecological information</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Educational
+                                        descriptions and botanical characteristics</li>
+                                </ul>
+
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <h5 class="font-semibold text-green-800 mb-2">Educational Design</h5>
+                                    <p class="text-sm text-green-700">Clear visual hierarchy, high contrast text, and
+                                        intuitive information layout make complex botanical data accessible to all
+                                        visitors, including those with visual or hearing impairments.</p>
+                                </div>
+                            </div>
+                            <div class="bg-gradient-to-b from-green-50 to-green-100 rounded-xl p-8 text-center">
+                                <div class="bg-white rounded-2xl p-4 shadow-lg max-w-xs mx-auto">
+                                    <img src="images/visual-content-screen.png" alt="Visual Content Selection"
+                                        class="w-full rounded-xl shadow-md">
+                                    <p class="text-xs text-slate-500 mt-2">Visual Tour - Plant Information</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content Selection Screen (Visual Tour Path) -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg border-l-4 border-green-500">
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <div>
+                                <div class="flex items-center mb-4">
+                                    <div
+                                        class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-xl mr-4">
+                                        📋</div>
+                                    <h3 class="text-2xl font-bold text-green-800">Visual Tour - Content Selection</h3>
+                                </div>
+                                <p class="text-slate-600 mb-6">Visual interface for choosing preferred content format at
+                                    a specific location, optimized for deaf users.</p>
+
+                                <h4 class="font-bold text-slate-800 mb-3">Visual Selection Features:</h4>
+                                <ul class="space-y-2 text-slate-600 mb-6">
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Clear visual content
+                                        format icons</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Estimated duration for
+                                        each format</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Visual progress
+                                        indicators</li>
+                                    <li class="flex items-center"><span
+                                            class="w-2 h-2 bg-green-400 rounded-full mr-3"></span>Location context with
+                                        images</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gradient-to-b from-green-50 to-green-100 rounded-xl p-8 text-center">
+                                <div class="bg-white rounded-lg p-6 shadow-md max-w-xs mx-auto">
+                                    <div class="text-4xl mb-4">🌺</div>
+                                    <h4 class="font-bold text-green-800 mb-2">Kibble Palace</h4>
+                                    <p class="text-sm text-slate-600 mb-4">Choose your content format:</p>
+                                    <div class="space-y-2 text-sm">
+                                        <button class="w-full bg-purple-100 text-purple-800 py-2 px-4 rounded-lg">🎥 BSL
+                                            Video (5 min)</button>
+                                        <button class="w-full bg-blue-100 text-blue-800 py-2 px-4 rounded-lg">� Text
+                                            Guide (2 min)</button>
+                                        <button class="w-full bg-orange-100 text-orange-800 py-2 px-4 rounded-lg">�️
+                                            Image
+                                            Gallery (3 min)</button>
+                                        <button class="w-full bg-green-100 text-green-800 py-2 px-4 rounded-lg">🎯 All
+                                            Formats</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Accessibility Features Summary -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 gradient-text">Accessibility Features</h2>
+
+                <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+                    <div class="bg-emerald-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-emerald-800 mb-4"><i class="fa-solid fa-ear-deaf"></i> For
+                            Deaf & Hard-of-Hearing Visitors</h3>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-emerald-500 rounded-full mr-3 mt-2"></span>QR code scanning with
+                                clear visual feedback and corner guides</li>
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-emerald-500 rounded-full mr-3 mt-2"></span>Comprehensive visual
+                                plant information with high-contrast design</li>
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-emerald-500 rounded-full mr-3 mt-2"></span>Conservation status
+                                indicators and botanical data</li>
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-emerald-500 rounded-full mr-3 mt-2"></span>Regional distribution
+                                maps and educational content</li>
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-emerald-500 rounded-full mr-3 mt-2"></span>Visual-first interface
+                                design with clear iconography</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl">
+                        <h3 class="text-xl font-bold text-blue-800 mb-4"><i
+                                class="fa-solid fa-person-walking-with-cane"></i> For Blind & Visually Impaired Visitors
+                        </h3>
+                        <ul class="space-y-3 text-slate-600">
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>Guided audio tours with
+                                professional botanical narration</li>
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>Location-based audio
+                                content with area and plant selection</li>
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>Large, tactile audio
+                                player controls with progress indicators</li>
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>Voice-guided navigation
+                                and screen reader compatibility</li>
+                            <li class="flex items-start"><span
+                                    class="w-2 h-2 bg-blue-500 rounded-full mr-3 mt-2"></span>Audio descriptions of
+                                plant characteristics and scientific information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Back to Main -->
+        <section class="py-12 bg-slate-50">
+            <div class="container mx-auto px-6 text-center">
+                <a href="index.html"
+                    class="inline-flex items-center bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition-colors">
+                    <i class="fa-solid fa-arrow-left mr-2"></i>
+                    Back to Main Project
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+    <!-- Flowbite JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+    <!-- Initialize Carousel -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        });
+    </script>
+</body>
+
+</html>
